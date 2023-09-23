@@ -1,124 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Waste Facility Locator</title>
-    <style>
-        /* Reset some default browser styles */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Define your own styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        /* Styles for the facility locator section */
-        .facility-locator {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .facility-locator label {
-            font-weight: bold;
-        }
-
-        .facility-locator select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        .facility-locator button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .facility-list {
-            margin-top: 20px;
-        }
-
-        /* Styles for the footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Waste Facility Locator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>E-Waste Facility Locator</h1>
-        <p>Find the nearest e-waste recycling facilities</p>
-    </header>
+  <header>
+    <h1>E-Waste Facility Locator</h1>
+    <p>Find the nearest e-waste recycling facilities</p>
+  </header>
 
-    <div class="container">
-        <section class="facility-locator">
-            <h2>Find a Facility</h2>
-            <form id="facility-search-form">
-                <label for="location">Select your location:</label>
-                <select id="location">
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Kolkata">Kolkata</option>
-                    <!-- Add more location options as needed -->
-                </select>
-                <button type="submit">Search</button>
-            </form>
+  <main class="container">
+    <section class="facility-locator">
+      <h2>Find a Facility</h2>
+      <form id="facility-search-form">
+        <label for="location">Select your location:</label>
+        <select id="location">
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+          <!-- Add more location options as needed -->
+        </select>
+        <button type="submit">Search</button>
+      </form>
 
-            <div class="facility-list">
-                <!-- Display search results here -->
-                <!-- Example:
-                <div class="facility">
-                    <h3>Facility Name 1</h3>
-                    <p>Address: Address 1</p>
-                    <p>Phone: Phone 1</p>
-                </div>
-                -->
-            </div>
-        </section>
-    </div>
+      <div class="facility-list">
+        <!-- Display search results here -->
+        <!-- Example:
+        <div class="facility">
+          <h3>Facility Name 1</h3>
+          <p>Address: Address 1</p>
+          <p>Phone: Phone 1</p>
+        </div>
+        -->
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2023 E-Waste Facility Locator</p>
-    </footer>
+  <footer>
+    <p>&copy; 2023 E-Waste Facility Locator</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
