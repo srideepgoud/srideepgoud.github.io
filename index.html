@@ -1,51 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Waste Facility Locator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>E-Waste Facility Locator</h1>
-    <p>Find the nearest e-waste recycling facilities</p>
-  </header>
-
-  <main class="container">
-    <section class="facility-locator">
-      <h2>Find a Facility</h2>
-      <form id="facility-search-form">
-        <label for="location">Select your location:</label>
-        <select id="location">
-          <option value="Hyderabad">Hyderabad</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Bengaluru">Bengaluru</option>
-          <option value="Mumbai">Mumbai</option>
-          <option value="Chennai">Chennai</option>
-          <option value="Kolkata">Kolkata</option>
-          <!-- Add more location options as needed -->
-        </select>
-        <button type="submit">Search</button>
-      </form>
-
-      <div class="facility-list">
-        <!-- Display search results here -->
-        <!-- Example:
-        <div class="facility">
-          <h3>Facility Name 1</h3>
-          <p>Address: Address 1</p>
-          <p>Phone: Phone 1</p>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e9d29fcf3c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I am <span>Srideep</span><br>A student from Vasavi College Engineering</h1>
+            </div>
         </div>
-        -->
-      </div>
-    </section>
-  </main>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" >
+                </div>
+                <div class="about-col-2"><h1 class="sub-title">About Me</h1>
+                    <p>👋 Hello! I'm Srideep Goud, a second-year Information Technology student at 
+                        Vasavi College of Engineering with a boundless enthusiasm for technology. 
+                        As an aspiring Full-Stack Developer, I'm driven by a relentless curiosity 
+                        to explore and innovate. Proficient in a range of languages and frameworks 
+                        including Python, React, and Node.js, I specialize in crafting seamless user 
+                        experiences and building robust, scalable applications. With a passion for 
+                        both Front-End and Back-End development, I'm equally at home designing 
+                        captivating interfaces as I am architecting powerful server-side solutions.
+                         Additionally, my interest in Data Science and AI/ML fuels my quest to 
+                         extract insights and drive data-driven decision-making. Eager to contribute 
+                         my skills and collaborate on exciting projects, I'm always open to new 
+                         opportunities to learn and grow. Let's connect and embark on this journey 
+                         together!</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Python, Java, HTML, CSS, SQL, JavaScript, C</li>
+                                <li><span>Front-End</span><br>React, Bootstrap</li>
+                                <li><span>Back-End</span><br>Node.js, Express</li>
+                                <li><span>Database</span><br>MySQL, MongoDB</li>
+                                <li><span>Tools</span><br>Git, VS Code, Jupyter Notebook</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Newsletter Editor</span><br>Newsletter Coordinator for IT Department at Vasavi College of Engineering</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Vasavi College of Engg</span><br>Bachelor of Engineering, Information Technology</li>
+                                <li><span>Sri Chaitanya College of Education</span><br>Intermediate, MPC</li>
+                                <li><span>Sacred Heart Academy</span><br>School</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------portfolio section------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.jpeg">
+                    <div class="layer">
+                        <h3>Emotion Based Music Player</h3>
+                        <p>It calculates the emotion of a person and plays songs based on the emotion</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg">
+                    <div class="layer">
+                        <h3>AI StoryForge</h3>
+                        <p>AI Creo is an AI-powered storytelling platform that enables seamless 
+                            creation of narratives, interactive chat experiences, and comic videos.
+                             Harnessing cutting-edge AI models, it fuels boundless creativity at the
+                              touch of a button, revolutionizing digital content creation.</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-phone"></i>sdgoud10@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i>+91 8341622696</p>
+                    <div class="socail-icons">
+                        <a href="https://www.linkedin.com/in/srideep-goud/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2023 E-Waste Facility Locator</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    </body>
 </html>
